@@ -1,4 +1,4 @@
-package hello.core.discount;
+package hello.core.beanfind;
 
 import hello.core.AppConfig;
 import hello.core.member.MemberService;
@@ -43,5 +43,7 @@ public class ApplicationContextBasicFindTest {
         assertThrows(NoSuchBeanDefinitionException.class, ()
                 -> ac.getBean("xxxx", MemberService.class));
     }
+
+
 
 }
